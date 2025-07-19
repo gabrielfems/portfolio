@@ -10,13 +10,14 @@ html {
 }
 
 :root {
-    --primaria: #4f46e5;
-    --intermediaria: #7a0de0;
-    --secundaria: #7c3aed;
+    --primaria: #0367A6;
+    --intermediaria: #0378A6;
+    --secundaria: #0388A6;
     --escuro: #0f172a;
     --maisescuro: #0a0f1c;
     --claro: #e2e8fe;
     --vidro: rgba(255, 255, 255, 0.1);
+    --destaque: #F2DA5E;
 }
 
 body{
@@ -66,9 +67,14 @@ body{
 .foto__gabriel{
     width: 350px;
     height: 350px;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
-    border: 4px solid var(--vidro);
+    border: 2px solid var(--primaria);
+    cursor: pointer;
+}
+
+.foto__gabriel:hover {
+    box-shadow: 0 0 20px #0367A6;
+    transform: translateY(-10px) scale(1.03);
 }
 
 .cabecalho{
@@ -156,7 +162,7 @@ body{
     background: rgba(255, 255, 255,0.05);
     border-radius: 16px;
     backdrop-filter: blur(5px);
-    border: 1px solid var(--vidro);
+    border: 3px solid  #0367A6;
     overflow: hidden;
     transition: all 0.5s ease;
     cursor: pointer;
@@ -169,14 +175,8 @@ body{
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 10px 20px #0367A6;
     transform: translateY(-10px) scale(1.03);
-}
-
-.projetos-imagem {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
 }
 
 .caixa-texto-projeto {
@@ -184,10 +184,15 @@ body{
 }
 
 .paragrafo-projetos {
-    color: rgba(226, 232, 240, 0.8);
+    color:  #0367A6;
     line-height: 1.25rem;
 }
 
 .info-projetos {
+    color: #e2e8fe;
     margin-bottom: 5px;
+}
+
+.link-github {
+    text-decoration: none;
 }
