@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --intermediaria: #7a0de0;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisescuro: #0a0f1c;
+    --claro: #e2e8fe;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background-color: var(--escuro);
+    color: var(--claro)
+}
+
+.navegacao{
+    position: fixed;
+    top: 0;
+    background-color: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu__link{
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu__link::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu__link:hover::after{
+    width: 100%;
+}
+
+.foto__gabriel{
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}
+
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0% 8%;
+    gap: 40px;
+}
+
+.cabecalho__eu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.cabecalho__titulo{
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+
+}
+
+.cabecalho__subtitulo {
+    font-size: 1.5rem;
+    color: var(--claro);
+}
+
+.cabecalho__sobre {
+    font-size: 1rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255,0.05);
+}
+
+.educacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.educacao__titulo {
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: auto;
+}
+
+.educacao__faculdades{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255,0.05);    
+    margin: 0% 20% 0% 20%;
+}
+
+.educacao__faculdades__nome {
+    font-size: 2rem;
+    color: var(--intermediaria);
+}
+
+.projetos {
+    padding: 6rem 2rem;
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.projetos-card {
+    background: rgba(255, 255, 255,0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.projetos-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa-texto-projeto {
+    padding: 1.5rem;
+}
+
+.paragrafo-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+}
