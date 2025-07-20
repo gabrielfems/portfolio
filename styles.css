@@ -5,6 +5,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--destaque);  
+  border-radius: 10px;      
+  border: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,13 +46,28 @@ body{
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
+    border-bottom: 1px solid var(--primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.contato__rede:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .menu{
     display: flex;
-    justify-content: center;
     list-style: none;
     gap: 3rem;
+    margin: 0 auto;
 }
 
 .menu__link{
@@ -65,8 +94,8 @@ body{
 }
 
 .foto__gabriel{
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     border: 2px solid var(--primaria);
     cursor: pointer;
@@ -112,38 +141,28 @@ body{
     max-width: 800px;
     margin: 0 auto;
     border-radius: 16px;
-    border: 1px solid var(--vidro);
+    border: 1px solid var(--primaria);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255,0.05);
 }
 
-.educacao{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-.educacao__titulo {
-    font-size: 3.5rem;
+.cabecalho__sobre__skills {
     color: var(--primaria);
-    font-weight: bold;
-    margin: auto;
 }
 
-.educacao__faculdades{
-    font-size: 1rem;
-    padding: 1rem;
-    border-radius: 16px;
-    border: 1px solid var(--vidro);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255,0.05);    
-    margin: 0% 20% 0% 20%;
+.botao-curriculo {
+  background-color: var(--primaria); /* ou outra cor */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.educacao__faculdades__nome {
-    font-size: 2rem;
-    color: var(--intermediaria);
+.botao-curriculo:hover {
+  background-color: var(--secundaria); /* cor ao passar o mouse */
 }
 
 .projetos {
@@ -156,6 +175,7 @@ body{
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 150px;
 
 }
 .projetos-card {
@@ -195,4 +215,81 @@ body{
 
 .link-github {
     text-decoration: none;
+}
+
+.softskills__titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+
+}
+
+.softskills {
+    margin-bottom: 150px;
+}
+
+.softskills__card {
+    background: rgba(255, 255, 255,0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 3px solid  #0367A6;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.softskills__caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.softskills__caixa__texto {
+    padding: 1.5rem;
+}
+
+.softskills__caixa__titulo {
+    color: #e2e8fe;
+    margin-bottom: 5px;
+}
+
+.softskills__caixa__p {
+    color:  #0367A6;
+    line-height: 1.25rem;
+}
+
+
+.educacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.educacao__titulo {
+    font-size: 3.5rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin: auto;
+}
+
+.educacao__faculdades{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 2px solid var(--primaria);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255,0.05);    
+    margin: 0% 20% 0% 20%;
+}
+
+.educacao__faculdades__nome {
+    font-size: 2rem;
+    color: var(--claro);
+}
+
+.educacao__faculdades__descricao {
+    color: var(--primaria);
 }
