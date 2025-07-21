@@ -5,49 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Gabriel | Portfolio</title>
 </head>
 
 <body>
     <nav class="navegacao">
         <div class="contato">
-                <a href="https://github.com/gabrielfems" target="_blank">
-                    <img width="48" height="48" src="https://img.icons8.com/material-outlined/48/github.png" alt="github" class="contato__rede"/>
-                </a>
+            <a href="https://github.com/gabrielfems" target="_blank">
+                <img width="48" height="48" src="https://img.icons8.com/material-outlined/48/github.png" alt="github"
+                    class="contato__rede" />
+            </a>
 
-                <a href="https://www.linkedin.com/in/gabrielfmart/" target="_blank">
-                    <img width="48" height="48" src="https://img.icons8.com/material-sharp/48/linkedin--v1.png" alt="linkedin--v1" class="contato__rede"/>
-                </a>
+            <a href="https://www.linkedin.com/in/gabrielfmart/" target="_blank">
+                <img width="48" height="48" src="https://img.icons8.com/material-sharp/48/linkedin--v1.png"
+                    alt="linkedin--v1" class="contato__rede" />
+            </a>
 
-                <a href="https://wa.me/5544974009339" target="_blank">
-                    <img width="48" height="48" src="https://img.icons8.com/material-sharp/48/whatsapp--v1.png" alt="whatsapp--v1" class="contato__rede"/>
-                </a>
+            <a href="https://wa.me/5544974009339" target="_blank">
+                <img width="48" height="48" src="https://img.icons8.com/material-sharp/48/whatsapp--v1.png"
+                    alt="whatsapp--v1" class="contato__rede" />
+            </a>
         </div>
 
-        <ul class="menu">
+          <button class="hamburguer" id="btn-menu">&#9776;</button>
+
+        <ul class="menu" id="menu">
             <li>
                 <a href="#inicio" class="menu__link">Início</a>
             </li>
-            <li>
-                <a href="#contatos" class="menu__link">Contatos</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu__link">Sobre</a>
-            </li>
-            <li>
-                <a href="#educacao" class="menu__link">Educação</a>
-            </li>
+
             <li>
                 <a href="#projetos" class="menu__link">Projetos</a>
             </li>
+
             <li>
                 <a href="#softskills" class="menu__link">Soft Skills</a>
             </li>
+
+            <li>
+                <a href="#certificados" class="menu__link">Certificados</a>
+            </li>
+
+            <li>
+                <a href="#educacao" class="menu__link">Educação</a>
+            </li>
+
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
-            <img src="./img/foto-gabriel.jpeg" alt="foto gabriel" class="foto__gabriel">
+        <img src="./img/foto-gabriel.jpeg" alt="foto gabriel" class="foto__gabriel">
         <div class="cabecalho__eu">
             <h1 class="cabecalho__titulo">Gabriel, 23</h1>
             <p class="cabecalho__subtitulo">
@@ -63,10 +73,11 @@
                 Estou desenvolvendo projetos práticos para aplicar e fortalecer meus conhecimentos, demonstrando meu
                 comprometimento com a aprendizagem contínua e com a área de desenvolvimento.
             </p>
+            <a href="curriculo.pdf" download class="botao-curriculo">Baixar Currículo</a>
         </div>
     </main>
 
-    <a href="curriculo.pdf" download class="botao-curriculo">Baixar Currículo</a>
+
 
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Trabalhos e projetos em equipe</h2>
@@ -75,7 +86,7 @@
             <div class="projetos-card">
                 <a class="link-github" href="https://github.com/gabrielfems/HackatonNasaSpaceApps" target="_blank">
                     <div class="caixa-texto-projeto">
-                        <h3 class="info-projetos">hackaton-nasa-space-apps</h3>
+                        <h3 class="info-projetos">hackathon-nasa-space-apps</h3>
                         <p class="paragrafo-projetos">descrição: Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit.
                             Ea a nam quaerat aspernatur delectus corrupti ipsa repudiandae, itaque quasi accusantium
@@ -189,6 +200,27 @@
         </div>
     </section>
 
+    <h2 id="certificados" class="carrossel__titulo">Certificados</h2>
+    <section class="carrossel">
+        <button class="carrossel-btn prev">&#10094;</button>
+
+        <div class="carrossel-container">
+            <div class="certificacoes">
+                <img src="img/cert-java-spring.png" alt="Certificado java-spring" />
+                <img src="img/cert-spaceapps.png" alt="Certificado Hackathon SpaceApps" />
+                <img src="img/cert-java-oo.png" alt="Certificado OO" />
+                <img src="img/cert-github.png" alt="Certificado Github" />
+            </div>
+        </div>
+
+        <button class="carrossel-btn next">&#10095;</button>
+    </section>
+
+    <div id="modal-certificado" class="modal">
+        <span class="fechar-modal">&times;</span>
+        <img class="modal-conteudo" id="imagem-expandida" />
+    </div>
+
     <section id="educacao" class="educacao">
         <h2 class="educacao__titulo">Educação</h2>
 
@@ -215,7 +247,7 @@
     </section>
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
