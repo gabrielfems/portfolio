@@ -392,8 +392,24 @@ body {
 .educacao {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     margin-bottom: 50vh;
+}
+
+/* NOVO container para agrupar os cards lado a lado */
+.educacao__cards {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 5vw;
+    /* espaço nas laterais em telas grandes */
+}
+
+/* Cada card se ajusta para ocupar até 45% da largura */
+.educacao__card {
+    flex: 1 1 45%;
+    max-width: 500px;
 }
 
 .educacao__titulo {
@@ -403,6 +419,7 @@ body {
     margin: auto;
 }
 
+/* Estilo do conteúdo interno do card */
 .educacao__faculdades {
     font-size: 1rem;
     padding: 1rem;
@@ -410,17 +427,19 @@ body {
     border: 2px solid var(--primaria);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
-    margin: 0% 20% 0% 20%;
+    /* removido o margin lateral que quebrava o layout lado a lado */
+    margin: 0;
 }
 
 .educacao__faculdades__nome {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--claro);
 }
 
 .educacao__faculdades__descricao {
     color: var(--primaria);
 }
+
 
 @media (max-width: 768px) {
     .cabecalho {
