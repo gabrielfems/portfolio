@@ -347,6 +347,7 @@ body {
 .certificacoes {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    cursor: grab;
 }
 
 .certificacoes img {
@@ -458,4 +459,24 @@ body {
         margin: 0 auto;
         padding: 1.5rem;
     }
+
+}
+
+.rodape {
+    background-color: var(--escuro);
+    color: var(--claro);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--primaria);
+}
+
+.rodape__contato a {
+    color: var(--primaria);
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.rodape__contato a:hover {
+    text-decoration: underline;
 }
