@@ -394,7 +394,6 @@ body {
     margin-bottom: 50vh;
 }
 
-/* NOVO container para agrupar os cards lado a lado */
 .educacao__cards {
     margin-top: 5vh;
     display: flex;
@@ -402,10 +401,8 @@ body {
     gap: 20px;
     justify-content: center;
     padding: 0 5vw;
-    /* espaço nas laterais em telas grandes */
 }
 
-/* Cada card se ajusta para ocupar até 45% da largura */
 .educacao__card {
     flex: 1 1 45%;
     max-width: 500px;
@@ -418,7 +415,6 @@ body {
     margin: auto;
 }
 
-/* Estilo do conteúdo interno do card */
 .educacao__faculdades {
     font-size: 1rem;
     padding: 1rem;
@@ -426,7 +422,6 @@ body {
     border: 2px solid var(--primaria);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
-    /* removido o margin lateral que quebrava o layout lado a lado */
     margin: 0;
 }
 
@@ -477,4 +472,52 @@ body {
 
 .rodape__contato a:hover {
     text-decoration: underline;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    padding: 6rem 2rem 0;
+}
+
+.experiencia__titulo {
+    font-size: 3.5rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin: auto;
+}
+
+.experiencia__cards {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.experiencia__card {
+    flex: 1 1 45%;
+    max-width: 700px;
+}
+
+.experiencia__item {
+    font-size: 1rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 2px solid var(--primaria);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.experiencia__nome {
+    font-size: 1.2rem;
+    color: var(--claro);
+    margin-bottom: 8px;
+}
+
+.experiencia__descricao {
+    color: var(--primaria);
+    line-height: 1.6rem;
 }
