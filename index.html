@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio de Gabriel, desenvolvedor backend com foco em Java e Spring Boot. Veja projetos, certificações e informações de contato.">
+        content="Portfólio de Gabriel, Desenvolvedor FullStack com foco em Java e Spring Boot. Veja projetos, certificações e informações de contato.">
     <meta name="keywords"
         content="Gabriel, Portfólio, Java, Spring Boot, HTML, CSS, Backend, Desenvolvedor, Engenharia de Software">
     <meta name="author" content="Gabriel Felipe Martins">
@@ -39,7 +39,7 @@
 
             <a href="mailto:gabriel.fe132@gmail.com" title="Enviar e-mail">
                 <img width="50" height="50" src="https://img.icons8.com/ios-filled/48/ffffff/gmail.png" alt="gmail"
-                    class="contato__rede" />
+                    class="contato__rede"/>
             </a>
         </div>
 
@@ -48,6 +48,10 @@
         <ul class="menu" id="menu">
             <li>
                 <a href="#inicio" class="menu__link">Início</a>
+            </li>
+
+            <li>
+                <a href="#experiencia" class="menu__link">Experiência</a>
             </li>
 
             <li>
@@ -72,29 +76,73 @@
     <main id="inicio" class="cabecalho">
         <img src="./img/foto-gabriel.jpeg" alt="foto gabriel" class="foto__gabriel">
         <div class="cabecalho__eu">
-            <h1 class="cabecalho__titulo">Gabriel, 23</h1>
+            <h1 class="cabecalho__titulo">Gabriel, 24</h1>
             <p class="cabecalho__subtitulo">
-                <span class="tag">&lt;</span>Desenvolvedor Backend<span class="tag">/&gt;</span>
+                <span class="tag">&lt;</span>Desenvolvedor FullStack<span class="tag">/&gt;</span>
             </p>
-            <p class="cabecalho__sobre">Sou estudante de Engenharia de Software e estou em busca da minha primeira
-                oportunidade no mercado de trabalho.
-                Tenho experiência com <strong class="cabecalho__sobre__skills">HTML5</strong>, <strong
-                    class="cabecalho__sobre__skills">CSS3</strong> e <strong
-                    class="cabecalho__sobre__skills">JavaScript</strong>, e atualmente estou me aprofundando em <strong
-                    class="cabecalho__sobre__skills">Java</strong> e <strong class="cabecalho__sobre__skills">Spring
-                    Boot</strong>.
-                Estou desenvolvendo projetos práticos para aplicar e fortalecer meus conhecimentos, demonstrando meu
-                comprometimento com a aprendizagem contínua e com a área de desenvolvimento.
+            <p class="cabecalho__sobre">Estudante de Engenharia de Software com experiência em desenvolvimento FullStack, 
+                atualmente trabalho em projetos pessoais e acadêmicos com 
+                <strong 
+                    class="cabecalho__sobre__skills">Java</strong> e  <strong
+                    class="cabecalho__sobre__skills">SpringBoot</strong>, no backend e <strong
+                    class="cabecalho__sobre__skills">React.js</strong> no frontend</strong>. 
+                    Além disso, possuo experiência em testes unitários com 
+                    <strong 
+                    class="cabecalho__sobre__skills">JUnit5</strong> e <strong
+                    class="cabecalho__sobre__skills">Mockito</strong>,</strong>
+                banco de dados relacional com 
+                <strong 
+                    class="cabecalho__sobre__skills">Postgres</strong> e <strong
+                    class="cabecalho__sobre__skills">MySQL</strong>, documentação com <strong
+                    class="cabecalho__sobre__skills">Swagger</strong>, tratamento de erros e exceções e validação de dados com <strong 
+                    class="cabecalho__sobre__skills">Bean Validation</strong>.
             </p>
-            <a href="assets/curriculo.pdf" download class="botao-curriculo">Baixar Currículo</a>
+            <a href="assets/CV - Gabriel Felipe Martins.pdf" download class="botao-curriculo">Baixar Currículo</a>
         </div>
     </main>
 
+        <section id="experiencia" class="experiencia">
+        <h2 class="experiencia__titulo">Experiência Profissional</h2>
+
+        <div class="experiencia__cards"> 
+            <div class="experiencia__card">
+                <div class="experiencia__item">
+                    <h2 class="experiencia__nome">CISPAR (03/2026 - atual)</h2>
+                    <p class="experiencia__descricao">
+                        Atividade de extensão da Universidade UniCesumar voltada à produção de sistema de manutenção de poços artesianos 
+                        e controle de equipamentos para a prefeitura de Sarandi (PR). 
+                        Backend com Java/SpringBoot, frontend em React.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Trabalhos e projetos em equipe</h2>
         <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <a class="link-github" href="https://github.com/gabrielfems/Wallet-Api" target="_blank">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projetos">wallet-api</h3>
+                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png"
+                            alt="java-coffee-cup-logo" />
+                        <img width="48" height="48" src="https://img.icons8.com/color/48/spring-logo.png"
+                            alt="spring-logo" />
+                        <img width="48" height="48" src="https://img.icons8.com/?size=100&id=rdKV2dee9wxd&format=png&color=000000"
+                            alt="swagger-logo" />
+                        <img width="48" height="48" src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
+                            alt="postgres-logo" />
+                        <p class="paragrafo-projetos">API REST de carteira digital desenvolvido com Java e SpringBoot,
+                            Permite gerenciar saldo, realizar transações e criar caixinhas com metas de economia. 
+                            Usa PostgreSQL como banco de dados, Swagger para documentação dos endpoints 
+                            e Mockito e JUnit5 para testes unitários.
+                        </p>
+                    </div>
+                </a>
+            </div>
 
             <div class="projetos-card">
                 <a class="link-github" href="https://github.com/gabrielfems/HackatonNasaSpaceApps" target="_blank">
@@ -132,6 +180,8 @@
                             alt="java-coffee-cup-logo" />
                         <img width="48" height="48" src="https://img.icons8.com/color/48/spring-logo.png"
                             alt="spring-logo" />
+                        <img width="48" height="48" src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
+                            alt="postgres-logo" />
                         <p class="paragrafo-projetos">Projeto em desenvolvimento com Java e Spring Boot, que consome
                             dados da API pública OMDb para simular uma plataforma de filmes. O objetivo é praticar o
                             consumo de APIs, manipulação de dados e boas práticas com orientação a objetos.</p>
@@ -252,12 +302,10 @@
         <img class="modal-conteudo" id="imagem-expandida" />
     </div>
 
-
-
     <section id="educacao" class="educacao">
         <h2 class="educacao__titulo">Educação</h2>
 
-        <div class="educacao__cards"> <!-- Novo container flex -->
+        <div class="educacao__cards"> 
 
             <div class="educacao__card">
                 <div class="educacao__faculdades">
